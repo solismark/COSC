@@ -83,7 +83,62 @@ boolean = (True) or (False)
  
  `git clone https://git.cybbh.space/programming/python/public.git`
 
+addition
+	
 
++
+
+subtraction
+	
+
+-
+
+multiplication
+	
+
+*
+
+division
+	
+
+/
+
+integer division
+	
+
+//
+
+modulus
+	
+
+%
+
+exponent
+	
+
+**
+
+```
+'hello' + string(1)
+`hello1`
+
+float(1)
+1.0
+
+int('1')
+1
+
+bool(0)
+False
+
+bool(1)
+True
+
+bool('0')
+True
+
+bool('')
+False
 
 
 
