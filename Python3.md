@@ -221,6 +221,38 @@ Can use indexing to change something within the list
 ['J', 'e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd']
 ```
 
+## Split
+split is a function and calling to it makes it a method function
+
+first example is using the space as the delimeter
+```
+>>> 'hello world'.split()
+['hello', 'world']
+````
+whatever you want to .split() you input the delimeter such as split(':') or split('-') and on that delimeter the function will split
+
+```
+'user:passwd'.split(':')
+'user', 'passwd'
+```
+## Join
+```
+>>> b
+['J', 'e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd']
+>>> ''.join(b)
+'Jello World'
+
+>>> b
+['J', 'e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd']
+>>> 'O'.join(b)
+'JOeOlOlOoO OWOoOrOlOd'
+>>> 
+
+```
+
+
+
+
 
 
 
