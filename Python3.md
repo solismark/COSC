@@ -61,5 +61,10 @@ float = 1.2
 
 integer = 1
 
+strings = "string" or 'string' can use single or double quotes
+
+boolean = (True) or (False) 
+
+
 
 
