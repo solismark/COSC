@@ -250,6 +250,27 @@ whatever you want to .split() you input the delimeter such as split(':') or spli
 
 ```
 
+``
+>>> hobbit = ['Frodo', 'Sam', 'Bilbo']
+>>> hobbit
+['Frodo', 'Sam', 'Bilbo']
+>>> hobbit[1]
+'Sam'
+>>> hobbit[-1]
+'Bilbo'
+
+
+>>> print('{} {} {}'.format(hobbit[0], hobbit[1], hobbit[2]))
+Frodo Sam Bilbo
+>>> print('{} - {} - {}'.format(hobbit[0], hobbit[1], hobbit[2]))
+Frodo - Sam - Bilbo
+>>> print('{} , {} , {}'.format(hobbit[0], hobbit[1], hobbit[2]))
+Frodo , Sam , Bilbo
+
+
+
+```
+
 
 
 
