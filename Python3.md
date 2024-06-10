@@ -273,7 +273,21 @@ Frodo , Sam , Bilbo
 
 ```
 
+## Email Splitter Activity
 
+```
+  1 email = input("Enter a email address:  ")
+  2 result = input("Want to split email? Yes or No  ")
+  3 true = "Yes"
+  4 false = "No"
+  5 if result == true:
+  6     part1 = email.split('@')
+  7     part2 = '.'.join(part1)
+  8     part3 = part2.split('.')
+  9     print(part1 and part2 and part3)
+ 10 else:
+ 11     print("Wrong option!!!!")
+``` 
 
 
 
