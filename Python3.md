@@ -27,3 +27,5 @@ lunix_opstation_em90
 ## Console to VTA Instance
 Project > Compute > Instances > Actions > Console to view GUI for each instance
 
+
+
