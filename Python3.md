@@ -30,14 +30,6 @@ Project > Compute > Instances > Actions > Console to view GUI for each instance
 ## Creating Environment
 vim $HOME/.vimrc
 
-syntax enable
-set tabstop=4
-set shiftwidth=4
-set expandtab
-set number
-filetype indent on
-set autoindent
- 
   ```
   1 syntax enable
   2 set tabstop=4
@@ -47,6 +39,7 @@ set autoindent
   6 filetype indent on
   7 set autoindent
 ```
+turn numbers off on vim `set number` and `unset number`
 
 nano $HOME/.nanorc
 
