@@ -1,4 +1,7 @@
 # Day 1
+## Student Handbook
+https://git.cybbh.space/programming/python/public
+
 
 ## SSH Command 
 This is the command is to login to our Linux as student : `ssh student@10.0.0.0 -X` 
@@ -48,7 +51,7 @@ set tabsize 4
 set tabstospaces
 set linenumbers
 
-## Script
+## Basics
 ```
 a = 1
 print(type(a))
@@ -64,6 +67,22 @@ integer = 1
 strings = "string" or 'string' can use single or double quotes
 
 boolean = (True) or (False) 
+
+    bool - boolean (True or False)
+
+    int - integers
+
+    float - floating point decimal
+
+    str - string
+
+    tuple - immutable sequence of items (not necessarily of the same type)
+
+    list - mutable sequence of items (not necessarily of the same type)
+
+
+
+
 
 
 
