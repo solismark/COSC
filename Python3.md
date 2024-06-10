@@ -80,6 +80,9 @@ boolean = (True) or (False)
 
     list - mutable sequence of items (not necessarily of the same type)
 
+ 
+ `git clone https://git.cybbh.space/programming/python/public.git`
+
 
 
 
