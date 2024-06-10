@@ -51,7 +51,15 @@ set linenumbers
 ## Script
 ```
 a = 1
-print(a)
+print(type(a))
 ```
+
 Caling for a script `python3 test.py` command
+type()
+
+float = 1.2
+
+integer = 1
+
+
 
