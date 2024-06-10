@@ -10,7 +10,8 @@ fruits = ["apple", "banana", "cherry"]
 for x in fruits:
   print(x)
 ```
-## Information on stacks
+## Information on stacks6 filetype indent on
+
 
 windows_opstation_em90
 
@@ -46,4 +47,11 @@ nano $HOME/.nanorc
 set tabsize 4
 set tabstospaces
 set linenumbers
+
+## Script
+```
+a = 1
+print(a)
+```
+Caling for a script `python3 test.py` command
 
