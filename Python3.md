@@ -250,7 +250,7 @@ whatever you want to .split() you input the delimeter such as split(':') or spli
 
 ```
 
-``
+```
 >>> hobbit = ['Frodo', 'Sam', 'Bilbo']
 >>> hobbit
 ['Frodo', 'Sam', 'Bilbo']
