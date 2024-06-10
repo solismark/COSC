@@ -27,5 +27,18 @@ lunix_opstation_em90 (password = password)
 ## Console to VTA Instance
 Project > Compute > Instances > Actions > Console to view GUI for each instance
 
+## Creating Environment
+vim $HOME/.vimrc
+syntax enable
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set number
+filetype indent on
+set autoindent
 
+nano $HOME/.nanorc
+set tabsize 4
+set tabstospaces
+set linenumbers
 
