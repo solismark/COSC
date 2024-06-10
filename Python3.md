@@ -17,7 +17,7 @@ windows_opstation_em90
 192.168.65.10
 10.50.21.242
 
-lunix_opstation_em90
+lunix_opstation_em90 (password = password)
 
 192.168.65.20
 10.50.37.42
