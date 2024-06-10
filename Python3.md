@@ -250,6 +250,8 @@ whatever you want to .split() you input the delimeter such as split(':') or spli
 
 ```
 
+## Format
+Can pass values into curly brackets as placements and can be saved as a different variable
 ```
 >>> hobbit = ['Frodo', 'Sam', 'Bilbo']
 >>> hobbit
