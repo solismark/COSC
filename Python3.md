@@ -140,6 +140,17 @@ True
 bool('')
 False
 
+'hello' * 5
+'hellohellohellohellohello'
+
+a = 'hello'
+print( a + 'world')
+helloworld
+
+'hello /'world'
+"hello 'world"
+
+```
 
 
 
