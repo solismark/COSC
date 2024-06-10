@@ -21,5 +21,6 @@ lunix_opstation_em90
 
 192.168.65.20
 10.50.37.42
+
 `ssh student@10.50.37.42 -X` and `terminator` 
 
