@@ -152,6 +152,24 @@ helloworld
 
 ```
 
+## Mutability
+
+```
+num = 0
+a = 1
+b = 2
+num = a + b
+num = 3
+```
+Tuples and Strings are immutable meaning they cannot change like above
+
+a = 'string' /n
+b = (tuple) /n
+c = [list] /n
+
+Indexing to call individual elements out of strings 'Hello'[1] would be e
+
+
 
 
 
