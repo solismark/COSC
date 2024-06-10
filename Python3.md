@@ -24,3 +24,9 @@ lunix_opstation_em90
 
 `ssh student@10.50.37.42 -X` and `terminator` 
 
+## Console to VTA Instance
+>Project
+>Compute
+>Instances
+>Actions - Console
+
