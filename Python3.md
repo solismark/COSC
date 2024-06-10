@@ -29,6 +29,7 @@ Project > Compute > Instances > Actions > Console to view GUI for each instance
 
 ## Creating Environment
 vim $HOME/.vimrc
+
 syntax enable
 set tabstop=4
 set shiftwidth=4
@@ -38,6 +39,7 @@ filetype indent on
 set autoindent
 
 nano $HOME/.nanorc
+
 set tabsize 4
 set tabstospaces
 set linenumbers
