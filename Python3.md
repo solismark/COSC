@@ -53,7 +53,40 @@ set linenumbers
 
 ## Basics
 ```
-a = 1
+a = 1addition
+	
+
++
+
+subtraction
+	
+
+-
+
+multiplication
+	
+
+*
+
+division
+	
+
+/
+
+integer division
+	
+
+//
+
+modulus
+	
+
+%
+
+exponent
+	
+
+**
 print(type(a))
 ```
 
@@ -163,11 +196,32 @@ num = 3
 ```
 Tuples and Strings are immutable meaning they cannot change like above
 
-a = 'string' /n
-b = (tuple) /n
-c = [list] /n
+a = 'string'
+
+b = (tuple) 
+
+c = [list]
 
 Indexing to call individual elements out of strings 'Hello'[1] would be e
+```
+>>> a = 'Hello World'
+>>> b = list(a)
+>>> c = tuple(a)
+>>> c
+('H', 'e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd')
+>>> a
+'Hello World'
+>>> b
+['H', 'e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd']
+```
+Can use indexing to change something within the list
+```
+>>> b[0] = 'J'
+>>> b
+['J', 'e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd']
+```
+
+
 
 
 
