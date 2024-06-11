@@ -296,6 +296,7 @@ Frodo , Sam , Bilbo
 # Day 2
 ## Flow Control, Input, and CodeWars
 
+# .append()
 In order to output a list you need to have a empty list.
 
 ```
@@ -309,9 +310,47 @@ fellowship.append('Mary')
 fellowship.append('Pip')
 ['Frodo', 'Sam', 'Mary', 'Pip']
 ```
+.append() is used to add something to the list above "fellowship"
+we are able to add things to the list with a .append()
+
+# .input()
+
+input is used to take user input and store it in a variable. you can also add a prompt for users to see
+if you want to use the variable you need to set the variable then add input after the =
+```
+input()
+something
+'something'
 
 
+input('Please type something:\n')
+Please type something:
+1
+'1'
 
+
+var = input('Type something:\n')
+Type something:
+1
+'1'
+print(type(var))
+<class 'str'>
+```
+
+
+# Type casting using input()
+
+```
+var = int(input('Type something:\n'))
+Type something:
+1
+1
+
+var + 1
+2
+
+```
+type casting allows you to set the input to a different type and perform different functions such as the example above with var + 1 because we typecasted it with int(input())
 
 
 
