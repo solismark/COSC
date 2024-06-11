@@ -439,3 +439,78 @@ Pip is a Took
 
 # WHILE Loops
 
+while will perform an action until the desired response is provided to exit
+
+```
+while True:
+	print('To infinity and beyond')
+To infinity and beyond
+To infinity and beyond
+To infinity and beyond
+To infinity and beyond
+To infinity and beyond
+To infinity and beyond
+```
+with this example since True will always be true then the print function will continue to print
+
+```
+while num <=5:
+	print(num)
+	num = num + 1 (or num +=1)
+
+0
+1
+2
+3
+4
+5
+
+
+>>>num
+6
+```
+
+this example will take num and see if its less than or greater than or equal to 5 then it will print the current number and then add 1 so it will continue until the num value is <= 5 therefore nothing happens
+
+
+# Pass, Break, Coninue
+
+pass will pass to the next line
+
+continue will exit from its location and went back to the loop its in
+
+break will break the code where ever it is located 
+
+```
+  1 while True:
+  2     user = input('Type pass, break, or continue:\n')
+  3     if user == 'pass':
+  4             pass
+  5             print('This is pass...')
+  6 
+  7     elif user == 'break':
+  8             break
+  9             print('This is break...')
+ 10 
+ 11     elif user == 'continue':
+ 12             continue
+ 13             print('This is continue...')
+ 14     else:
+ 15             print('Please choose a valid option:\n')
+
+
+
+Type pass, break, or continue:
+continue
+
+Type pass, break, or continue:
+continue
+
+Type pass, break, or continue:
+pass
+This is pass...
+
+Type pass, break, or continue:
+break
+.....
+```
