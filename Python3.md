@@ -353,5 +353,89 @@ var + 1
 type casting allows you to set the input to a different type and perform different functions such as the example above with var + 1 because we typecasted it with int(input())
 
 
+# Flow control
+water can flow or crash just like code
 
+# FOR Loop
+from above the fellowship list is being evaluated with hobbit. for each hobbit (listing item) within fellowship it will print each object in the list and then add the 'is in the fellowship' string 
+
+will allow you to walk through a list and perform some type of function
+
+```
+fellowship
+for hobbit in fellowship:
+	print(hobbit + 'is in the fellowship')
+
+
+>>> for hobbit in fellowship:
+...     print(hobbit + 'is in the fellowship')
+... 
+someis in the fellowship
+moreis in the fellowship
+itemsis in the fellowship
+bcis in the fellowship
+
+```
+
+# IF ELIF ELSE Loops
+
+```
+if <condition>:
+	<code block>
+elif <condition>:
+	<code block>
+elif <condition>:
+	<code block>
+else:
+```
+now we can work off our for loop from the above fellowship example
+using our hobbit to work through our list we can perform a if statement that says when hobbit is equal to Sam it will perform the print function
+
+```
+fellowship = ['Frodo', 'Sam', 'Mary', 'Pip']
+for hobbit in fellowship:
+	if hobbit == 'Sam':
+		print(hobbit + 'is wise')
+
+Sam is wise
+
+```
+
+
+adding to our if elif else loops 
+with the following code it will perform both outputs because it is inside a for loop using hobbit to go through the list regardless if Sam or Pip is found and the print takes place
+
+```
+fellowship = ['Frodo', 'Sam', 'Mary', 'Pip']
+for hobbit in fellowship:
+	if hobbit == 'Sam':
+		print(hobbit + 'is wise')
+	elif hobbit == 'Pip'
+		print(hobbit + 'is a Took')
+Sam is wise
+Pip is a Took
+
+```
+
+now using else it will run through each time and output in the following order
+
+```
+fellowship = ['Frodo', 'Sam', 'Mary', 'Pip']
+for hobbit in fellowship:
+	if hobbit == 'Sam':
+		print(hobbit + 'is wise')
+	elif hobbit == 'Pip':
+		print(hobbit + 'is a Took')
+	else:
+		print(hobbit + 'is a hobbitses')
+Frodo is a hobbitses
+Sam is wise
+Mary is a hobbitses
+Pip is a Took
+
+```
+
+
+
+# WHILE Loops
 
