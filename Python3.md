@@ -287,7 +287,11 @@ Frodo , Sam , Bilbo
   9     print(part1 and part2 and part3)
  10 else:
  11     print("Wrong option!!!!")
-``` 
+```
+
+
+# Day 2
+## Flow Control, Input, and CodeWars
 
 
 
