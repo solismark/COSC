@@ -296,7 +296,19 @@ Frodo , Sam , Bilbo
 # Day 2
 ## Flow Control, Input, and CodeWars
 
+In order to output a list you need to have a empty list.
 
+```
+fellowship = []
+fellowship.append('Froto')
+fellowship
+['Froto']
+
+fellowship.append('Sam')
+fellowship.append('Mary')
+fellowship.append('Pip')
+['Frodo', 'Sam', 'Mary', 'Pip']
+```
 
 
 
