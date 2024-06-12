@@ -1259,6 +1259,26 @@ with open (file) as fp:
     for line in fp:
         emotions.append(line.split()[0])
 
+ # how to pull a word from a text file that contains a letter
+
+Using the file school_prompt.txt, if the character ‘p’ is in a word, then add the word to a list called p_words.
+```
+p_words = []
+file = 'school_prompt.txt'
+with open (file) as fp:
+    for line in fp:
+        for word in line.split():
+            if "p" in word:
+                p_words.append(word)
+```
+
+we are able to evaluate if a letter is inside the a word
+
+if 'z' in zebra
+true
+
+if 'k' in zebra
+false
  
 
 
