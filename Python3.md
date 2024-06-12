@@ -1171,8 +1171,79 @@ Last line
 
 ```
 
+# The textfile, travel_plans.txt, contains the summer travel plans for someone with some commentary. Find the total number of characters in the file and save to the variable num.
 
+```
+num = 0
+file = 'travel_plans.txt'
+with open (file) as fp:
+    num = len(fp.read())
 
+```
+
+# We have provided a file called emotion_words.txt that contains lines of words that describe emotions. Find the total number of words in the file and assign this value to the variable num_words.
+
+```
+num_words = 0
+file = 'emotion_words.txt'
+with open (file) as fp:
+    sentences = fp.read()
+    words = sentences.split()
+    num_words = len(words)
+
+```
+
+so first we declare num_words and file
+then we utilize the open as fp 
+sentences is equal to the string read from emotion.txt
+we then split strings into words using words
+from there we len(words) to grab the number of words within words
+
+# Assign to the variable num_lines the number of lines in the file school_prompt.txt.
+
+```
+num_lines = 0
+file = 'school_prompt.txt'
+with open (file) as fp:
+    for line in fp:
+        num_lines += 1
+```
+with the code block above we declare the num_lines variable and file 
+we then use with open and assign it to fp
+we say for 'LINE' in fp that will +1 for each and add to num_lines
+
+# Assign the first 30 characters of school_prompt.txt as a string to the variable beginning_chars.
+
+```
+file = 'school_prompt.txt'
+beginning_chars = ""
+with open (file) as fp:
+    beginning_chars = fp.read(30)
+
+```
+
+# Assign the first 33 characters from the textfile, travel_plans.txt to the variable first_chars.
+
+```
+file = 'travel_plans.txt'
+first_chars = ""
+with open (file) as fp:
+    first_chars = fp.read(33)
+```
+
+# Using the file school_prompt.txt, assign the third word of every line to a list called three.
+
+```
+three = []
+file = 'school_prompt.txt'
+with open (file) as fp:
+    strings = fp.readlines()
+    for line in strings:
+        word = line.split()
+        three.append(word[2])
+    
+
+```
 
 
 
