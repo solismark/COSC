@@ -982,8 +982,18 @@ using order[][] we are able to pull the index position index and index position 
 ~                                                                                          
 ~
 ```                                     
-movies[i] is pulling each list from within the tuple and the [0] is pulling the first index posistion value within the list that was pulled by [i]
-so movies[i[0]] would be Ironman and movies[i[1]] would be Pokemon
+# for i in order:
+is allowing us to retreive the ('Ironman', 4) and ('Pokemon', 1)
+
+# movies[i[0]] 
+movies = {'Ironman':40.0 ,'Hulk':20.0 ,'Thor':10.0 ,'Hawkeye':5.0, 'Pokemon':45.0}
+
+is pulling the first index posistion value within the list that was pulled by [i]
+
+# movies[i[0]] 
+movies = {'Ironman':40.0 ,'Hulk':20.0 ,'Thor':10.0 ,'Hawkeye':5.0, 'Pokemon':45.0}
+
+would be Ironman and movies[i[1]] would be Pokemon
 
 
 
