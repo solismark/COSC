@@ -235,6 +235,13 @@ whatever you want to .split() you input the delimeter such as split(':') or spli
 'user:passwd'.split(':')
 'user', 'passwd'
 ```
+
+# Splitting a email address
+
+```
+
+```
+
 ## Join
 ```
 >>> b
@@ -530,4 +537,236 @@ break
  10     print('The number you entered cannot be divided by 3, 5, or both')
 
 ```
+
+# Are you playing banjo? CodeWar
+
+```
+def are_you_playing_banjo(name):
+    if name[0] == 'r' or name[0] == 'R':
+        print(name + ' plays banjo')
+    else:
+        print(name + ' does not play banjo')
+    return name
+
+
+def are_you_playing_banjo(name):
+    if name[0] == 'r' or name[0] == 'R':
+        return name + ' plays banjo'
+    else:
+        return name + ' does not play banjo'
+```
+
+# School paperwork Codewar
+
+```
+def paperwork(n, m):
+    if m<0 or n<0:
+        return 0
+    else:
+        return n*m
+```
+
+# Rock paper scissors Codewars
+
+```
+def rps(p1, p2):
+    if p1 == 'rock' and p2 == 'scissors':
+        return 'Player 1 won!'
+    elif p1 == 'rock' and p2 == 'paper':
+        return 'Player 2 won!'
+    elif p1 == 'scissors' and p2 == 'rock':
+        return 'Player 2 won!'
+    elif p1 == 'scissors' and p2 == 'paper':
+        return 'Player 1 won!'
+    elif p1 == 'paper' and p2 == 'rock':
+        return 'Player 1 won!'
+    elif p1 == 'paper' and p2 == 'scissors':
+        return 'Player 2 won!'
+    elif p1 == p2:
+        return 'Draw!'
+```
+
+# Guest Boss  Codewars
+
+```
+def greet(name, owner):
+    if name == owner:
+        return 'Hello boss'
+    else:
+        return 'Hello guest'
+```
+
+
+## Day 3
+
+# Review
+int(input) will automatically typecast to a int to perform interger functions
+
+```
+lst = []
+list.append('Wednesday')
+lst
+[Wednesday]
+
+type(lst)
+```
+
+tuples are () and list are []
+
+```
+function
+
+def name(argument1, argument 2)
+```
+
+For loops
+	for x in list:
+ 
+while loops
+	while this is true continue to do this
+
+if branching
+elif
+else does not need a condition it will perform if none of the if and elif perform
+
+
+# Ord() and Chr()
+
+Ord() allows you to get ordinal ACSII position of a letter
+
+```
+>>> ord('a')
+97
+>>> ord('z')
+122
+>>> ord('A')
+65
+
+```
+
+same can be done but doing the opposite of Chr()
+
+```
+>>> chr(122)
+'z'
+>>> chr(123)
+'{'
+>>> chr(121)
+'y'
+>>> chr(120)
+'x'
+
+```
+
+# Range()
+
+will give you the start and end of whatever number that was placed 
+```
+>>> range(10)
+range(0, 10)
+```
+# List(Range())
+
+will allow you to list the numbers between the two numbers within the range ()
+
+# range(START, STOP (and go back 1), STEP)
+is the default operation
+
+```
+>>> list(range(0,10,2))
+[0, 2, 4, 6, 8]
+
+
+```
+
+```
+>>> for num in range(2,11,2):
+...     print(num)
+... 
+2
+4
+6
+8
+10
+
+```
+the above example is showing how we are able to utilize the range() and for to iterate though the ranges (START, STOP, STEP) function outputting 
+2
+4
+6
+8
+10
+
+# Len() or length
+
+len() can be used to help us with indexing number position
+
+
+```
+>>> hobbits = ['frodo', 'sam', 'bilbo']
+>>> len(hobbits)
+3
+```
+we can use range with len all together to be able to iterate through a list using undex positions
+
+```
+>>> hobbits = ['frodo', 'sam', 'bilbo']
+>>> len(hobbits)
+3
+
+
+>>> range(len(hobbits))
+range(0, 3)
+
+
+>>> list(range(len(hobbits)))
+[0, 1, 2]
+
+
+>>> for hobbitmember in range(len(hobbits)):
+...     print(hobbits[hobbitmember])
+... 
+frodo
+sam
+bilbo
+```
+
+# Codewar two_sun puzzle 
+x + i = target
+
+```
+  1 def two_sun(number,target):
+  2     length = range(len(number))
+  3     for i in length:
+  4         for x in length:
+  5                 if x == 0:
+  6                     pass
+  7                 elif x == i:
+  8                     pass
+  9                 elif number[i] + number[x] == target:
+ 10                     print(i,x)
+ 11                     break
+ 12 two_sun([0,1,2,3], 4)
+```
+# output would be 
+
+```
+student@lin-ops:~$ python 005_practice.py 
+(1, 3)
+(3, 1)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
