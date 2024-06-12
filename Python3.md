@@ -817,6 +817,7 @@ the -1 in the step allows is to walk backwords in the list
 
 
 # Guess the number Exercise
+See below for solution and product
 
 ```
   1 #!/usr/bin/env python3
@@ -837,7 +838,7 @@ the -1 in the step allows is to walk backwords in the list
  16 guess_number(23)
 ```
 
-# Another solution
+Another solution
 
 ```
 
@@ -863,7 +864,7 @@ the -1 in the step allows is to walk backwords in the list
 
 
 ```
-# Worked
+Worked
 Enter a number between 0 and 100:
 100
 Too high! Guess again...
@@ -873,6 +874,118 @@ Too low! Guess again...
 Enter a number between 0 and 100:
 23
 You guessed correct
+
+
+# Dictionary
+
+romanNumerals = {'I':1, 'V':5, 'X':10, 'L':50}
+
+# dictionary = {'KEY':VALUE}
+example of structure
+
+```
+
+>>> roman = {'I':1, 'V':5, 'X':10, 'L':50}
+>>> roman['I']
+1
+>>> roman['V']
+5
+>>> roman['X']
+10
+>>> roman['L']
+50
+
+```
+
+you can also add and remove things from the dictionary
+
+ADDING
+```
+>>> roman['C'] = 100
+>>> roman
+{'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100}
+```
+
+DELETING
+```
+>>> roman
+{'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100}
+>>> del roman['I']
+>>> roman
+{'V': 5, 'X': 10, 'L': 50, 'C': 100}
+```
+
+PRINTING out the values from a dictionary
+
+```
+>>> for key in roman:
+...     print('{} = {}'.format(key, roman[key]))
+... 
+V = 5
+X = 10
+L = 50
+C = 100
+```
+
+# Inventory Practice
+Working with dictionaries
+
+first we need a movies listing with prices
+
+```
+movies = {'Ironman':40.0 ,'Hulk':20.0 ,'Thor':10.0 ,'Hawkeye':5.0, 'Pokemon':45.0}
+
+```
+next we need a order and a total
+
+```
+order = [('Ironman', 4), ('Pokemon', 1)]
+  3 total = 0
+
+```
+
+now we need to be able to index through the list to grab the movie that is in the order
+
+```
+>>> for i in order:
+...     print(i[0])
+... 
+Ironman
+Pokemon
+
+```
+
+now we can pull the movie we will want to grab the value we need to find the calculation
+
+```	
+>>>order
+[('Ironman', 4), ('Pokemon', 1)]
+>>> order[0]
+('Ironman', 4)
+>>> order[0][0]
+'Ironman'
+
+```
+using order[][] we are able to pull the index position index and index position inside the list
+
+
+ ```
+
+ 1 movies = {'Ironman':40.0 ,'Hulk':20.0 ,'Thor':10.0 ,'Hawkeye':5.0, 'Pokemon':45.0}
+  2 order = [('Ironman', 4), ('Pokemon', 1)]
+  3 total = 0
+  4 for i in order:
+  5     total += (movies[i[0]]*i[1])
+  6 
+  7 print(total)
+  8 
+~                                                                                          
+~
+```                                     
+movies[i] is pulling each list from within the tuple and the [0] is pulling the first index posistion value within the list that was pulled by [i]
+so movies[i[0]] would be Ironman and movies[i[1]] would be Pokemon
+
+
 
 
 
