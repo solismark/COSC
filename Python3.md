@@ -1245,6 +1245,22 @@ with open (file) as fp:
 
 ```
 
+# More File IO 
+
+with open ('emotions_words.txt') as fp:
+	num_words = len(fp.read().split())
+
+
+# How to grab first word from every line in a text file
+
+file = 'emotion_words.txt'
+emotions = []
+with open (file) as fp:
+    for line in fp:
+        emotions.append(line.split()[0])
+
+ 
+
 
 
 
