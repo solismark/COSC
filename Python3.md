@@ -1010,9 +1010,166 @@ Final product
 ```
 
 
+# *args and **kwargs
+
+ignore the args and utlize as a tuple and not a script
 
 
+```
+ 1 def myFuns(*args):
+  2     print(args)
+  3     print(type(args))
+  4 
+  5 myFuns(1,2,3,4,5)
+  6 
 
+(1, 2, 3, 4, 5)
+<class 'tuple'>
+
+                            
+```
+the following will step through all the numbers and add all the numbers until the very end
+```
+
+
+  1 def myFuns(*args):
+  2     total = 0
+  3     for num in args:
+  4         print(num)
+  5         total += num
+  6 
+  7     print(total)
+  8 
+  9 
+ 10 myFuns(1,2,3,4,5)
+ 11                    
+```
+
+More information on *ARGS
+
+When your function can have a variable number of arguments, you can use args to contain all the arguments in a single variable to allow unpacking in order.
+```
+def doSum(*args):
+    type(args)
+    sum = 0
+    for addend in args:
+        sum += addend
+    print("Sum is {}".format(sum))
+doSum(1,2,3,4)
+Sum is 10
+
+
+```
+
+
+# File I/O
+
+open and close file i/o
+
+```
+fp = open("test.txt")
+fp.close()
+
+>>> fp = open("test.txt")
+>>> fp.close()
+
+```
+'r'
+Read (default)
+with open("test.txt", 'r') as outfile:
+
+'w'
+Write
+with open("test.txt", 'w') as outfile:
+
+
+This will allow you to automatically open and close the file
+
+```
+>>> with open("test.txt") as fp:
+...     pass
+... 
+```
+
+Writing to a file
+
+
+```
+with open("test.txt", 'w') as outfile:
+     outfile.write('firstline\n')
+     lines = ('Second line\n', 'Third line\n', 'Fourth line\n', 'Last line\n')
+     outfile.writelines(lines)
+
+
+resulting in
+
+firstline
+Second line
+Third line
+Fourth line
+Last line
+
+```
+
+reading to a file
+
+```
+>>> with open("test.txt", 'r') as fp:
+...     fp.read()
+... 
+
+'firstline\nSecond line\nThird line\nFourth line\nLast line\n'
+
+
+```
+
+reading a certain number of characters
+
+```
+>>> with open("test.txt", 'r') as fp:
+...     fp.read(5)
+... 
+'first'
+
+
+```
+another example of reading from a file
+
+```
+>>> with open("test.txt", 'r') as fp:
+...     for line in fp: 
+...             print(line)
+... 
+firstline
+
+Second line
+
+Third line
+
+Fourth line
+
+Last line
+
+>>>> with open("test.txt", 'r') as fp:
+...     for line in fp: 
+...             print(line, end='')
+... 
+firstline
+Second line
+Third line
+Fourth line
+Last line
+>> with open("test.txt", 'r') as fp:
+...     for line in fp: 
+...             print(line, end='')
+... 
+firstline
+Second line
+Third line
+Fourth line
+Last line
+
+```
 
 
 
