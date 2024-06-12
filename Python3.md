@@ -756,6 +756,123 @@ student@lin-ops:~$ python 005_practice.py
 (3, 1)
 ```
 
+# Slicing 
+lst[start:stop:step]
+
+```
+>>> lst = list(range(0, 11, 1))
+>>> lst
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+>>> lst[0]
+0
+>>> lst[1]
+1
+>>> lst[4]
+4
+```
+another way to traverse a list
+
+# Example of slicing
+# lst[start:stop:step] is how to utilize
+```
+>>> lst
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+>>> lst[0:10:1]
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+>>> lst[0::1]
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+>>> lst[0:-1:1]
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+>>> lst[2::]
+[2, 3, 4, 5, 6, 7, 8, 9, 10]
+>>> lst[2::2]
+[2, 4, 6, 8, 10]
+>>> lst[2::3]
+[2, 5, 8]
+>>> lst[2::4]
+[2, 6, 10]
+
+```
+
+moving backwords now
+
+```
+>>> lst
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+>>> lst[::-1]
+[10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
+>>> lst[::-2]
+[10, 8, 6, 4, 2, 0]
+>>> lst[::-3]
+[10, 7, 4, 1]
+>>> lst[::-4]
+[10, 6, 2]
+>>> lst[:2:-1]
+[10, 9, 8, 7, 6, 5, 4, 3]
+
+
+```
+the -1 in the step allows is to walk backwords in the list
+
+
+# Guess the number Exercise
+
+```
+  1 #!/usr/bin/env python3
+  2 
+  3 def guess_number(n):
+  4     while True:
+  5         n = int(input('Enter a number between 0 and 100:\n'))
+  6         if n > 23:
+  7             print('Too high! Guess again...')
+  8             continue
+  9         elif n < 23:
+ 10             print('Too low! Guess again...')
+ 11             continue
+ 12         elif n == 23:
+ 13             print('You guessed correct')
+ 14             break
+ 15             
+ 16 guess_number(23)
+```
+
+# Another solution
+
+```
+
+  1 #!/usr/bin/env python3
+  2 
+  3 def guess_number(n):
+  4     while True:
+  5         x = int(input('Enter a number between 0 and 100:\n'))
+  6         if x > n and x < 100:
+  7             print('Too high! Guess again...')
+  8             continue
+  9         elif x < n and x < 100:
+ 10             print('Too low! Guess again...')
+ 11             continue
+ 12         elif x == n:
+ 13             print('You guessed correct')
+ 14             break
+ 15         else:
+ 16             print('Number entered is outside question.')
+ 17             continue
+ 18        
+ 19 guess_number(23)
+
+
+```
+# Worked
+Enter a number between 0 and 100:
+100
+Too high! Guess again...
+Enter a number between 0 and 100:
+20
+Too low! Guess again...
+Enter a number between 0 and 100:
+23
+You guessed correct
 
 
 
