@@ -995,6 +995,19 @@ movies = {'Ironman':40.0 ,'Hulk':20.0 ,'Thor':10.0 ,'Hawkeye':5.0, 'Pokemon':45.
 
 would be Ironman and movies[i[1]] would be Pokemon
 
+Final product
+
+```
+  1 movies = {'Ironman':40.0 ,'Hulk':20.0 ,'Thor':10.0 ,'Hawkeye':5.0, 'Pokemon':45.0}
+  2 order = [('Ironman', 4), ('Pokemon', 1)]
+  3 total = 0
+  4 for i in order:
+  5     total += (movies[i[0]]*i[1])
+  6 
+  7 print(total)
+  8 
+
+```
 
 
 
