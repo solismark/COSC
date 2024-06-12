@@ -514,3 +514,20 @@ Type pass, break, or continue:
 break
 .....
 ```
+
+# Fizzbuzz activity
+
+```
+  1 #!/usr/bin/env python3
+  2 num = int(input('Enter a number:\n')
+  3 if num % 3 == 0:
+  4     print(num + ' is fizzbuzz')
+  5 elif num % 3 = 0:
+  6     print(num + ' is fizz')
+  7 elif num % 5 = 0:
+  8     print(num + ' is buzz')
+  9 else:
+ 10     print('The number you entered cannot be divided by 3, 5, or both')
+
+```
+
