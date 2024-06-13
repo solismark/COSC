@@ -1171,6 +1171,19 @@ Last line
 
 ```
 
+## .upper or .lower
+method functions
+```
+>>> a = 'AfdsasfdsDsDfF'
+>>> a.upper()
+'AFDSASFDSDSDFF'
+>>> a.lower()
+'afdsasfdsdsdff'
+>>> a
+'AfdsasfdsDsDfF'
+```
+
+
 ## The textfile, travel_plans.txt, contains the summer travel plans for someone with some commentary. Find the total number of characters in the file and save to the variable num.
 
 ```
@@ -1412,7 +1425,166 @@ def q2(*args):
 ```
 
 ## question 3
+given a lst and a number return a new lst containing the last (number) entries in the list
+
+```
+def q3(lst,n):
+	return lst[-n::]
+
+>>> lst = [1, 2, 3, 4, 5]
+>>> n = 2
+>>> lst[-2]
+4
+>>> lst[-2::]
+[4, 5]
+>>> lst[-n::]
+[4, 5]
+>>> lst[-n::]
+[4, 5]
+
+```
+
+we are able to use [START:STOP:STEP] on the list to be able to grab the n from starting at the minus -2 of the list with lst[-2::]
+
+## question 4
+given an input string, return a list containing the ordinal numbers of each character in the string in the order found in the input string.
+
+```
+def q4(strng):
+	lst = []
+	num = []
+	for i in strng:
+		lst.append(i)
+	for x in lst:
+		sm = ord(x)
+		num.append(sm)
+	return(num)
+```
+
+instructor example
+we take the string and then for each letter in the string we take it and appened it to the list using .append(ord(i)) in order to find the ord value and then return it as a lst
+
+```
+def q4(strng):
+lst = []
+for i in strng:
+	lst.append(ord(i))
+return lst
+```
+
+## question 5
+given an string return a tuple with each element in the tuple containing a single word from the input string in order
+
+practice
+first we took and made a string that we used the split function to make them all serperate then we returned it and typecasted it in order to return tuple(strng.split())
+```
+>>> strng = 'Long sentence to test the functions capabilities'
+>>> strng
+'Long sentence to test the functions capabilities'
+>>> strng
+'Long sentence to test the functions capabilities'
+>>> strng.split()
+['Long', 'sentence', 'to', 'test', 'the', 'functions', 'capabilities']
+>>> tuple(strng.split())
+('Long', 'sentence', 'to', 'test', 'the', 'functions', 'capabilities')
+
+```
+```
+def q5(strng):
+	return tuple(string.split())	
+	
+
+```
+
+## question 6
+given a dictionary whose keys are product names and values are product prices per unit and a list of tuples in order of product names and quantities compue the return the total value of the order
+
+we are givin a catalog and we need to compute the prices
+[KEY, VALUE]
+
+print(catalog)
+print(type(catalog))
+print(order)
+print(type(order))
+
+```
+def q6(catalog, order):
+	total = 0
+	for i in order:
+		total += catalog[i[0]]*i[1]
+	return total
 
 
+```
+
+## question 7
+given a filename open the file and return the length of the first line in the file excluding the line terminator
+
+fp.readline() will read a single line and then store it in something or you can go and return the LEN of FP.READLINE which will give you the number of items within that line
+
+```
+def q7(filename)
+with open (filename) as fp:
+	return len(fp.readline()) -1:
+
+```
+## question 8
+given a file name and a list, write each entry from the list to the file on seperate lines until a case insesitive entry of stop is found in the list
+
+if stop is not found in the list write the entire list to the file on seperate lines
+
+you first need to open and w since we are writing
+for word in the lst we are then searching for word.lower() is == to stop to catch the stop
+else we are writing on a new line so we had to format as seen below to add a new line for every word
+
+
+```
+120 def q8(filename,lst):
+121     with open(filename, 'w') as infile:
+122         for word in lst:
+123             if word.lower() == 'stop':
+124                 break
+125             else:
+126                 infile.write('{}\n'.format(word))
+
+```
+
+## question 9
+given a military time return either good morning, afternoon, evening, or night
+
+```
+ def q9(miltime):
+     print(miltime)
+     print(type(miltime)
+     if miltime >= 300 and miltime < 1200:
+         return('Good Morning')
+     elif miltime >= 1200 and miltime < 1600:
+         return('Good Afternoon')
+     elif miltime >= 1600 and miltime < 2100:
+         return('Good Evening')
+     elif miltime >= 2100 and miltime < 300:
+         return('Good Night')
+
+
+```
+
+another way to do is 300 >= miltime < 1600
+
+## question 10
+given an argument numlist and being a list of numbers we are going to pass true iif all numbers in the list are NOT negative and pass false if there are negative numbers
+
+
+so first we take the list and for num in list we then see if its < 0 
+```
+ def q10(numlist):
+     for num in numlist:
+         if num < 0:
+             return False
+     return True  
+
+
+
+```
+put the return after the for so they iterate thru and doesnt just return true on the first positive it sees
 
 
