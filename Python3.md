@@ -1298,9 +1298,7 @@ python3 script {#} (question that you want)
 ## Practice Exam Questions
 
 
-## Given the floatstr, which is a comma separated string of
-## floats, return a list with each of the floats in the 
-## argument as elements in the list.
+## Given the floatstr, which is a comma separated string of floats, return a list with each of the floats in the argument as elements in the list.
 
 def q1(floatstr):
 	lst = []
@@ -1315,8 +1313,7 @@ argument as elements in the list.
 '''
 pass
 
-## Given the variable length argument list, return the average
-## of all the arguments as a float
+## Given the variable length argument list, return the average of all the arguments as a float
 
 def q2(*args):
 	total = sum(args)
@@ -1332,8 +1329,7 @@ of all the arguments as a float
 pass
 
 
-## Given an input string, return a list containing the ordinal numbers of 
-## each character in the string in the order found in the input string.
+## Given an input string, return a list containing the ordinal numbers of each character in the string in the order found in the input string.
 
 def q4(strng):
 	lst = []
