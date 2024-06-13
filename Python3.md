@@ -1369,10 +1369,48 @@ def q10(numlist):
 ```
 
 
-## 
+## More Practice Example
 
+question 1 
+given the floatstr which is a comma seperated string of floats return a list with each of the floats in the argument as elements in the list
+```
+def q1(floatstr)
+	lst = []
+	for x in floatstr.split(','):
+		lst.append(float(x))
+return(lst)
 
+```
 
+question 2
+given the variable length arguemnt list, return the average of all the arguments as a float
 
+```
+def q2(*args):
+	total = sum(args)   #gets the total of all the numbers added together
+	amount = len(args) #gets the amount of all the numbers total number of numbers
+	avg = float(total/amount)  #this is calculating the total/amount to get the average
+	return(avg)
+
+```
+sum is a way to calculate the amount of something within the tuple
+another way
+
+```
+total = 0
+for i in args:
+	total += i
+
+total
+15
+```
+instructor example
+
+```
+def q2(*args):
+	return sum(args)/len(args)
+```
+
+question 3
 
 
