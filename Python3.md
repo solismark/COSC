@@ -1371,7 +1371,7 @@ def q10(numlist):
 
 ## More Practice Example
 
-question 1 
+## question 1 
 given the floatstr which is a comma seperated string of floats return a list with each of the floats in the argument as elements in the list
 ```
 def q1(floatstr)
@@ -1382,7 +1382,7 @@ return(lst)
 
 ```
 
-question 2
+## question 2
 given the variable length arguemnt list, return the average of all the arguments as a float
 
 ```
@@ -1411,6 +1411,8 @@ def q2(*args):
 	return sum(args)/len(args)
 ```
 
-question 3
+## question 3
+
+
 
 
