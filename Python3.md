@@ -1353,6 +1353,20 @@ each character in the string in the order found in the input string.
 pass
 
 
+## Given the argument numlist as a list of numbers, return True if all numbers in the list are NOT negative. If any numbers in the list are negative, return False.
+
+we took a list of numbers and went through each num to evaluate if the number is less than 0 and if it was it returned false
+
+```
+def q10(numlist):
+	for num in numlist:
+		if num < 0:
+			return False
+		else:
+			return True  
+
+
+```
 
 
 
