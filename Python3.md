@@ -1588,3 +1588,261 @@ so first we take the list and for num in list we then see if its < 0
 put the return after the for so they iterate thru and doesnt just return true on the first positive it sees
 
 
+
+
+
+
+# Code wars practice
+
+Check for factor
+
+Factors are numbers you can multiply together to get another number.
+
+2 and 3 are factors of 6 because: 2 * 3 = 6
+
+You can find a factor by dividing numbers. If the remainder is 0 then the number is a factor.
+You can use the mod operator (%) in most languages to check for a remainder
+For example 2 is not a factor of 7 because: 7 % 2 = 1
+
+Note: base is a non-negative number, factor is a positive number.
+
+solution 
+
+```
+def check_for_factor(base, factor):
+    if base % factor != 0:
+        return False
+    else:
+        return True
+
+
+```
+
+
+
+## codewar practice calculate grade
+
+```
+
+def get_grade(s1, s2, s3):
+    total = s1 + s2 + s3
+    grade = (total/3)
+    if 90 <= grade <= 100 :
+       return 'A'
+    elif 80 <= grade <= 90 :
+        return 'B'
+    elif 70 <= grade <= 80 :
+        return 'C'
+    elif 60 <= grade <= 70 :
+        return 'D'
+    elif 0 <= grade <= 60 :
+        return 'F'
+
+```
+
+## codewars 
+
+
+You get an array of numbers, return the sum of all of the positives ones.
+
+Example [1,-4,7,12] => 1 + 7 + 12 = 20
+
+Note: if there is nothing to sum, the sum is default to 0.
+
+solution 
+
+```
+def positive_sum(arr):
+    sm = [] 
+    for num in arr:
+        if num > 0:
+            sm.append(num)
+        else:
+            pass
+    return sum(sm)
+
+```
+
+## codewars
+
+Given an array of integers.
+
+Return an array, where the first element is the count of positives numbers and the second element is sum of negative numbers. 0 is neither positive nor negative.
+
+If the input is an empty array or is null, return an empty array.
+
+Example
+For input [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15], you should return [10, -65].
+
+```
+def count_positives_sum_negatives(arr):
+    if not arr:
+        return[]
+    pos = 0
+    neg = 0
+    for num in arr:
+        if num > 0:
+            pos += 1
+        elif num < 0:
+            neg += num
+    return [pos, neg]
+
+```
+
+## codewars
+
+Given an array of integers as strings and numbers, return the sum of the array values as if all were numbers.
+
+Return your answer as a number.
+
+
+```
+def sum_mix(arr):
+    nums = []
+    for num in arr:
+        nums.append(int(num))
+    return sum(nums)
+```
+
+
+# codewars
+Given a set of numbers, return the additive inverse of each. Each positive becomes negatives, and the negatives become positives.
+
+[1, 2, 3, 4, 5] --> [-1, -2, -3, -4, -5]
+[1, -2, 3, -4, 5] --> [-1, 2, -3, 4, -5]
+[] --> []
+You can assume that all values are integers. Do not mutate the input array.
+```
+def invert(lst):
+    result = list()
+    for num in lst:
+        result.append(-num)
+    return result
+```
+
+
+# codewars
+Your function takes two arguments:
+
+current father's age (years)
+current age of his son (years)
+Сalculate how many years ago the father was twice as old as his son (or in how many years he will be twice as old). The answer is always greater or equal to 0, no matter if it was in the past or it is in the future.
+
+```
+def twice_as_old(dad_years_old, son_years_old):
+    twice = son_years_old * 2
+    dad = 0
+    while dad_years_old != twice:
+        dad_years_old -= 1
+        dad += 1
+    
+    return dad
+
+    pass
+
+```
+
+
+
+## codewars
+
+There was a test in your class and you passed it. Congratulations!
+
+But you're an ambitious person. You want to know if you're better than the average student in your class.
+
+You receive an array with your peers' test scores. Now calculate the average and compare your score!
+
+Return true if you're better, else false!
+
+Note:
+Your points are not included in the array of your class's points. Do not forget them when calculating the average score!
+
+```
+def better_than_average(class_points, your_points):
+    clss = sum(class_points) / len(class_points)
+    if clss > your_points:
+        return False
+    elif clss < your_points:
+        return True
+```
+
+
+
+## codewars
+
+Is the string uppercase?
+Task
+Create a method to see whether the string is ALL CAPS.
+
+Examples (input -> output)
+"c" -> False
+"C" -> True
+"hello I AM DONALD" -> False
+"HELLO I AM DONALD" -> True
+"ACSKLDFJSgSKLDFJSKLDFJ" -> False
+"ACSKLDFJSGSKLDFJSKLDFJ" -> True
+In this Kata, a string is said to be in ALL CAPS whenever it does not contain any lowercase letter so any string containing no letters at all is trivially considered to be in ALL CAPS.
+
+```
+def is_uppercase(inp):
+    if inp == inp.upper():
+        return True
+    else:
+        return False
+
+```
+
+
+## codewars
+Build a function that returns an array of integers from n to 1 where n>0.
+
+Example : n=5 --> [5,4,3,2,1]
+
+
+```
+def reverse_seq(n):
+    reverse = range(n,0,-1)
+    return list(reverse)
+    pass
+```
+
+
+## codewar 
+
+You are given the length and width of a 4-sided polygon. The polygon can either be a rectangle or a square.
+If it is a square, return its area. If it is a rectangle, return its perimeter.
+
+Example(Input1, Input2 --> Output):
+
+6, 10 --> 32
+3, 3 --> 9
+Note: for the purposes of this kata you will assume that it is a square if its length and width are equal, otherwise it is a rectangle.
+
+
+```
+def area_or_perimeter(l , w):
+    square = 0
+    rect = 0
+    if l == w:
+        square = l * w
+        return square
+    else:
+        rect = l + w + l + w
+        return rect
+
+```
+
+
+## codewars
+
+convert decimal to binary
+
+```
+
+def add_binary(a,b):
+    cal = a + b
+    binary = format(cal, 'b')
+    return binary
+
+
+```
