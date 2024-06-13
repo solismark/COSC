@@ -236,7 +236,7 @@ whatever you want to .split() you input the delimeter such as split(':') or spli
 'user', 'passwd'
 ```
 
-# Splitting a email address
+## Splitting a email address
 
 ```
 
@@ -303,7 +303,7 @@ Frodo , Sam , Bilbo
 # Day 2
 ## Flow Control, Input, and CodeWars
 
-# .append()
+## .append()
 In order to output a list you need to have a empty list.
 
 ```
@@ -320,7 +320,7 @@ fellowship.append('Pip')
 .append() is used to add something to the list above "fellowship"
 we are able to add things to the list with a .append()
 
-# .input()
+## .input()
 
 input is used to take user input and store it in a variable. you can also add a prompt for users to see
 if you want to use the variable you need to set the variable then add input after the =
@@ -345,7 +345,7 @@ print(type(var))
 ```
 
 
-# Type casting using input()
+## Type casting using input()
 
 ```
 var = int(input('Type something:\n'))
@@ -360,10 +360,10 @@ var + 1
 type casting allows you to set the input to a different type and perform different functions such as the example above with var + 1 because we typecasted it with int(input())
 
 
-# Flow control
+## Flow control
 water can flow or crash just like code
 
-# FOR Loop
+## FOR Loop
 from above the fellowship list is being evaluated with hobbit. for each hobbit (listing item) within fellowship it will print each object in the list and then add the 'is in the fellowship' string 
 
 will allow you to walk through a list and perform some type of function
@@ -384,7 +384,7 @@ bcis in the fellowship
 
 ```
 
-# IF ELIF ELSE Loops
+## IF ELIF ELSE Loops
 
 ```
 if <condition>:
@@ -444,7 +444,7 @@ Pip is a Took
 
 
 
-# WHILE Loops
+## WHILE Loops
 
 while will perform an action until the desired response is provided to exit
 
@@ -480,7 +480,7 @@ while num <=5:
 this example will take num and see if its less than or greater than or equal to 5 then it will print the current number and then add 1 so it will continue until the num value is <= 5 therefore nothing happens
 
 
-# Pass, Break, Coninue
+## Pass, Break, Coninue
 
 pass will pass to the next line
 
@@ -522,7 +522,7 @@ break
 .....
 ```
 
-# Fizzbuzz activity
+## Fizzbuzz activity
 
 ```
   1 #!/usr/bin/env python3
@@ -538,7 +538,7 @@ break
 
 ```
 
-# Are you playing banjo? CodeWar
+## Are you playing banjo? CodeWar
 
 ```
 def are_you_playing_banjo(name):
@@ -556,7 +556,7 @@ def are_you_playing_banjo(name):
         return name + ' does not play banjo'
 ```
 
-# School paperwork Codewar
+## School paperwork Codewar
 
 ```
 def paperwork(n, m):
@@ -566,7 +566,7 @@ def paperwork(n, m):
         return n*m
 ```
 
-# Rock paper scissors Codewars
+## Rock paper scissors Codewars
 
 ```
 def rps(p1, p2):
@@ -586,7 +586,7 @@ def rps(p1, p2):
         return 'Draw!'
 ```
 
-# Guest Boss  Codewars
+## Guest Boss  Codewars
 
 ```
 def greet(name, owner):
@@ -597,9 +597,9 @@ def greet(name, owner):
 ```
 
 
-## Day 3
+# Day 3
 
-# Review
+## Review
 int(input) will automatically typecast to a int to perform interger functions
 
 ```
@@ -630,7 +630,7 @@ elif
 else does not need a condition it will perform if none of the if and elif perform
 
 
-# Ord() and Chr()
+## Ord() and Chr()
 
 Ord() allows you to get ordinal ACSII position of a letter
 
@@ -658,18 +658,18 @@ same can be done but doing the opposite of Chr()
 
 ```
 
-# Range()
+## Range()
 
 will give you the start and end of whatever number that was placed 
 ```
 >>> range(10)
 range(0, 10)
 ```
-# List(Range())
+## List(Range())
 
 will allow you to list the numbers between the two numbers within the range ()
 
-# range(START, STOP (and go back 1), STEP)
+## range(START, STOP (and go back 1), STEP)
 is the default operation
 
 ```
@@ -697,7 +697,7 @@ the above example is showing how we are able to utilize the range() and for to i
 8
 10
 
-# Len() or length
+## Len() or length
 
 len() can be used to help us with indexing number position
 
@@ -731,7 +731,7 @@ sam
 bilbo
 ```
 
-# Codewar two_sun puzzle 
+## Codewar two_sun puzzle 
 x + i = target
 
 ```
@@ -748,7 +748,7 @@ x + i = target
  11                     break
  12 two_sun([0,1,2,3], 4)
 ```
-# output would be 
+## output would be 
 
 ```
 student@lin-ops:~$ python 005_practice.py 
@@ -756,7 +756,7 @@ student@lin-ops:~$ python 005_practice.py
 (3, 1)
 ```
 
-# Slicing 
+## Slicing 
 lst[start:stop:step]
 
 ```
@@ -772,8 +772,8 @@ lst[start:stop:step]
 ```
 another way to traverse a list
 
-# Example of slicing
-# lst[start:stop:step] is how to utilize
+## Example of slicing
+## lst[start:stop:step] is how to utilize
 ```
 >>> lst
 [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
@@ -816,7 +816,7 @@ moving backwords now
 the -1 in the step allows is to walk backwords in the list
 
 
-# Guess the number Exercise
+## Guess the number Exercise
 See below for solution and product
 
 ```
@@ -876,11 +876,11 @@ Enter a number between 0 and 100:
 You guessed correct
 
 
-# Dictionary
+## Dictionary
 
 romanNumerals = {'I':1, 'V':5, 'X':10, 'L':50}
 
-# dictionary = {'KEY':VALUE}
+## dictionary = {'KEY':VALUE}
 example of structure
 
 ```
@@ -927,7 +927,7 @@ L = 50
 C = 100
 ```
 
-# Inventory Practice
+## Inventory Practice
 Working with dictionaries
 
 first we need a movies listing with prices
@@ -982,15 +982,15 @@ using order[][] we are able to pull the index position index and index position 
 ~                                                                                          
 ~
 ```                                     
-# for i in order:
+## for i in order:
 is allowing us to retreive the ('Ironman', 4) and ('Pokemon', 1)
 
-# movies[i[0]] 
+## movies[i[0]] 
 movies = {'Ironman':40.0 ,'Hulk':20.0 ,'Thor':10.0 ,'Hawkeye':5.0, 'Pokemon':45.0}
 
 is pulling the first index posistion value within the list that was pulled by [i]
 
-# movies[i[0]] 
+## movies[i[0]] 
 movies = {'Ironman':40.0 ,'Hulk':20.0 ,'Thor':10.0 ,'Hawkeye':5.0, 'Pokemon':45.0}
 
 would be Ironman and movies[i[1]] would be Pokemon
@@ -1010,7 +1010,7 @@ Final product
 ```
 
 
-# *args and **kwargs
+## *args and **kwargs
 
 ignore the args and utlize as a tuple and not a script
 
@@ -1062,7 +1062,7 @@ Sum is 10
 ```
 
 
-# File I/O
+## File I/O
 
 open and close file i/o
 
@@ -1171,7 +1171,7 @@ Last line
 
 ```
 
-# The textfile, travel_plans.txt, contains the summer travel plans for someone with some commentary. Find the total number of characters in the file and save to the variable num.
+## The textfile, travel_plans.txt, contains the summer travel plans for someone with some commentary. Find the total number of characters in the file and save to the variable num.
 
 ```
 num = 0
@@ -1181,7 +1181,7 @@ with open (file) as fp:
 
 ```
 
-# We have provided a file called emotion_words.txt that contains lines of words that describe emotions. Find the total number of words in the file and assign this value to the variable num_words.
+## We have provided a file called emotion_words.txt that contains lines of words that describe emotions. Find the total number of words in the file and assign this value to the variable num_words.
 
 ```
 num_words = 0
@@ -1199,7 +1199,7 @@ sentences is equal to the string read from emotion.txt
 we then split strings into words using words
 from there we len(words) to grab the number of words within words
 
-# Assign to the variable num_lines the number of lines in the file school_prompt.txt.
+## Assign to the variable num_lines the number of lines in the file school_prompt.txt.
 
 ```
 num_lines = 0
@@ -1212,7 +1212,7 @@ with the code block above we declare the num_lines variable and file
 we then use with open and assign it to fp
 we say for 'LINE' in fp that will +1 for each and add to num_lines
 
-# Assign the first 30 characters of school_prompt.txt as a string to the variable beginning_chars.
+## Assign the first 30 characters of school_prompt.txt as a string to the variable beginning_chars.
 
 ```
 file = 'school_prompt.txt'
@@ -1222,7 +1222,7 @@ with open (file) as fp:
 
 ```
 
-# Assign the first 33 characters from the textfile, travel_plans.txt to the variable first_chars.
+## Assign the first 33 characters from the textfile, travel_plans.txt to the variable first_chars.
 
 ```
 file = 'travel_plans.txt'
@@ -1231,7 +1231,7 @@ with open (file) as fp:
     first_chars = fp.read(33)
 ```
 
-# Using the file school_prompt.txt, assign the third word of every line to a list called three.
+## Using the file school_prompt.txt, assign the third word of every line to a list called three.
 
 ```
 three = []
@@ -1245,7 +1245,7 @@ with open (file) as fp:
 
 ```
 
-# More File IO 
+## More File IO 
 
 with open ('emotions_words.txt') as fp:
 	num_words = len(fp.read().split())
@@ -1259,7 +1259,7 @@ with open (file) as fp:
     for line in fp:
         emotions.append(line.split()[0])
 
- # how to pull a word from a text file that contains a letter
+ ## how to pull a word from a text file that contains a letter
 
 Using the file school_prompt.txt, if the character ‘p’ is in a word, then add the word to a list called p_words.
 ```
@@ -1279,7 +1279,10 @@ true
 
 if 'k' in zebra
 false
- 
+
+
+## Grade a specific question
+python3 script {#} (question that you want)
 
 
 
