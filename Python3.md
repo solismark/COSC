@@ -1299,13 +1299,13 @@ python3 script {#} (question that you want)
 
 
 ## Given the floatstr, which is a comma separated string of floats, return a list with each of the floats in the argument as elements in the list.
-
+```
 def q1(floatstr):
 	lst = []
 	for x in floatstr.split(','):
 		lst.append(float(x))
 	return(lst)
-
+```
 TLO: 112-SCRPY002, LSA 3,4
 Given the floatstr, which is a comma separated string of
 floats, return a list with each of the floats in the 
@@ -1314,12 +1314,14 @@ argument as elements in the list.
 pass
 
 ## Given the variable length argument list, return the average of all the arguments as a float
-
+```
 def q2(*args):
 	total = sum(args)
 	amount = len(args)
 	avg = float(total/amount)
 	return(avg)
+```
+
 '''
 TLO: 112-SCRPY006, LSA 3
 TLO: 112-SCRPY007, LSA 4
@@ -1331,6 +1333,7 @@ pass
 
 ## Given an input string, return a list containing the ordinal numbers of each character in the string in the order found in the input string.
 
+```
 def q4(strng):
 	lst = []
 	num = []
@@ -1340,6 +1343,7 @@ def q4(strng):
 		sm = ord(x)
 		num.append(sm)
 	return(num)
+```
 '''
 TLO: 112-SCRPY004, LSA 1,2
 TLO: 112-SCRPY006, LSA 3
