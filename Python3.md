@@ -1875,3 +1875,19 @@ def filter_list(l):
     return filtered_list  # returns our new list with only just an integers.
 
 ```
+
+
+
+
+# two files
+
+def q6(f0, f1)
+diff = []
+linenumbers = 0
+with open (f0) as file0:
+	with open(f1) as file1:
+ 		for l0,l1 in zip(file0,file1):
+ 			if l0 != l1:
+   				diffs.append(linenumber)
+      			linenumber += 1
+return diffs
