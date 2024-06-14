@@ -1915,3 +1915,14 @@ return diffs
 
 
 ```
+
+
+
+str = []
+for z in list:
+    if z.isnumeric():
+         str.append(z)
+return int("".join(str))
+
+str = ['1', '2']
+int(12)
