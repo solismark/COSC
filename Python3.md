@@ -1846,3 +1846,32 @@ def add_binary(a,b):
 
 
 ```
+
+## codewars
+
+return a sum of a list of numbers passed to the def
+
+```
+def summation(num):
+    rng = list(range(0,num+1))
+    sm = sum(rng)
+    return sm
+
+
+
+```
+
+
+## codewars
+
+```
+def filter_list(l):
+    filtered_list = []  # our new list with integers in the future, blank initialization.
+    # this loop checks if the input is integer and if it's actually an integer, pushes it into a new blank list
+    for i in l:
+        if isinstance(i, int):
+            filtered_list.append(i)
+    #  print(filtered_list)
+    return filtered_list  # returns our new list with only just an integers.
+
+```
