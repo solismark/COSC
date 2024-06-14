@@ -1891,3 +1891,27 @@ with open (f0) as file0:
    				diffs.append(linenumber)
       			linenumber += 1
 return diffs
+
+
+```
+126 def q9(strng):
+127     results = {}
+128     for i in strng:
+129         if i in results:
+130             results[i] += 1
+131         else:
+132             results[i] = 1
+133     return results
+134 
+135     # Given a string, return a dictionary whose keys are the set of
+136     # unique characters within the string and whose values are the
+137     # count of occurances of each character.
+138     # For example, if given 'hello', the returned dictionary should be
+139     # { 'l':2, 'h':1, 'e':1, 'o':1 }
+140     # collections.Counter has been disabled for this function.
+141     pass
+142 
+
+
+
+```
